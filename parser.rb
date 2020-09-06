@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'logger'
+require_relative './log_processor'
 
 class Parser
   attr_reader :logger, :args
@@ -28,7 +29,7 @@ class Parser
   private
 
   def process_log(log_filename)
-    File.foreach(log_filename) { |log_entry| p log_entry }
+    LogProcessor.new(log_filename).process
   end
 end
 
