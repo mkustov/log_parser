@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../output_saver'
+require_relative '../app/output_saver'
 
 describe OutputSaver do
   let(:page_views) { [['/home', 5], ['/profile', 1]] }

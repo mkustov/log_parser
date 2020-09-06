@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../log_parser'
+require_relative '../app/log_parser'
 
 describe LogParser do
   describe '#run' do

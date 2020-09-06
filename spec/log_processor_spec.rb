@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../log_processor'
+require_relative '../app/log_processor'
 
 describe LogProcessor do
   let(:fixture_page_views) { [['/contact', 5], ['/home', 4], ['/help_page/1', 2]] }

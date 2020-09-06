@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../page_visits_sorter'
+require_relative '../app/page_visits_sorter'
 
 describe PageVisitsSorter do
   let(:page_views) { [['/home', 5], ['/profile', 1], ['/about', 3]] }

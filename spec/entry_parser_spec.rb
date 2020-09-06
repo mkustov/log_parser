@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../entry_parser'
+require_relative '../app/entry_parser'
 
 describe EntryParser do
   describe 'spits string by space character' do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../entry_counter'
+require_relative '../app/entry_counter'
 
 describe EntryCounter do
   let(:log_entry) { double(url: '/help_page/1', ip_address: '126.318.035.038') }

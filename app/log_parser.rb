@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'logger'
+require_relative './log_processor'
 
 class LogParser
   attr_reader :logger, :args
