@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../parser'
-require_relative '../log_processor'
+require_relative '../log_parser'
 
-describe Parser do
+describe LogParser do
   describe '#run' do
     subject { described_class.new(args).run }
 
@@ -35,7 +34,6 @@ describe Parser do
         allow(File).to receive(:exist?).with(filename).and_return(true)
         expect_any_instance_of(Logger).not_to receive(:error)
         expect_any_instance_of(described_class).to receive(:process_log).with(filename)
-        expect_any_instance_of(LogProcessor).to receive(:process)
         subject
       end
     end
