@@ -3,3 +3,6 @@ Layout/LineLength:
 
 Naming/MemoizedInstanceVariableName:
   Enabled: false
+
+Style/Documentation:
+  Enabled: false
